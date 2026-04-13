@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Restaurant Predictor</title>
+    <title>Marks Predictor</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,16 +43,15 @@
 <body>
 
     <div class="container">
-        <h1>Restaurant Rating Predictor</h1>
+        <h1>Student Marks Predictor</h1>
 
         <form method="POST">
-            <input type="text" name="feature1" placeholder="Enter value 1" required><br>
-            <input type="text" name="feature2" placeholder="Enter value 2" required><br>
-            <button type="submit">Predict</button>
+            <input type="number" step="any" name="hours" placeholder="Enter study hours" required><br>
+            <button type="submit">Predict Marks</button>
         </form>
 
         {% if prediction %}
-            <h2>Prediction: {{ prediction }}</h2>
+            <h2>Predicted Marks: {{ prediction }}</h2>
         {% endif %}
     </div>
 
